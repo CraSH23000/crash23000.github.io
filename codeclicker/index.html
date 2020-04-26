@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title> Code Clicker </title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <div class="clicker">
+      <div class="clicker__button-area">
+        <div>Lines of Code: <div id="clicker_label">0</div></div>
+        <button id="clicker_button" class="clicker__button"> </button>
+      </div>
+    </div>
+    <div class="buyables">
+      <div class="buyable">
+        <div id="hand_amount" class="buyable__amount"> 0 </div>
+        <div class="buyable__text">
+          <div class="buyable__title">
+            <span class="buyable__title-text"> Extra Hands </span>
+            <span class="buyable__title-price"> <div id="hand_cost">0</div> Lines of Code </span>
+          </div>
+          <div class="buyable__description"> More hands, more code </div>
+          <div class="buyable__effect"> Writes 1 line of code per extra hand </div>
+        </div>
+        <button id="hand_button" class="buyable__button"> Buy </button>
+      </div>
+
+      <div id="monkeys" class="buyable">
+        <div id="monkey_amount"  class="buyable__amount"> 0 </div>
+        <div class="buyable__text">
+          <div class="buyable__title">
+            <span class="buyable__title-text"> Code Monkey </span>
+            <span class="buyable__title-price"> <div id="monkey_cost">0</div> Lines of Code </span>
+          </div>
+          <div class="buyable__description"> Not the most skilled, but they get the work done </div>
+          <div class="buyable__effect"> Writes 1 line of code per second </div>
+        </div>
+        <button id="monkey_button" class="buyable__button"> Buy </button>
+      </div>
+
+      <div id="monkeyRobotArms" class="buyable">
+        <div id="monkey_hand_amount"  class="buyable__amount"> 0 </div>
+        <div class="buyable__text">
+          <div class="buyable__title">
+            <span class="buyable__title-text"> Robot Arms for Monkeys </span>
+            <span class="buyable__title-price"> <div id="monkey_hand_cost">0</div> Lines of Code </span>
+          </div>
+          <div class="buyable__description"> Brain Computer Interfaces allow these monkeys to control robotic arms for more code. </div>
+          <div class="buyable__effect"> Writes 1 extra line of code per monkey </div>
+        </div>
+        <button id="monkey_hand_button" class="buyable__button"> Buy </button>
+      </div>
+
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
