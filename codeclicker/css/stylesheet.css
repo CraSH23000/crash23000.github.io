@@ -7,36 +7,53 @@ body {
   height: 100%;
   font-family: "Open Sans";
   color: #003b00;
+  background: #1f262a;
+
 }
 
 .clicker {
-
   align-items: center;
   justify-content: center;
   background: #1f262a;
-  height: 50%;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .buyables {
-
   overflow: auto;
   background-color: #1f262a;
-  height: 50%;
+  /* height: 50%; */
   list-style: none;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .buyable {
   display: flex;
-
   padding: 30px 20px;
   margin: 10px;
   border: 2px solid #003b00;
   border-radius: 8px;
   background-color: #000000;
-  //width: 600px;
-  height: 100px;
+  width: 600px;
   align-items: center;
   justify-content: center;
+  align-self: center;
+  margin: auto;
 }
 
 .buyable__amount {
