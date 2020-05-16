@@ -1,15 +1,27 @@
 <html>
   <head>
-    <title> Code Clicker </title>
+    <title> go do thing </title>
+    <script type="text/javascript" src="js/sorttable/sort-table.js"></script>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #1f262a;
+      }
+    </style>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
   </head>
   <body>
     <div id="news" class="news"><br></div>
     <div class="clicker">
       <div class="clicker__button-area">
-        <div>Lines of Code: <div id="clicker_label">0</div></div>
-        <button id="clicker_button" class="clicker__button"> </button>
+        <h2>go do thing</h2>
       </div>
     </div>
     <div><br></div>
@@ -17,62 +29,64 @@
       <div id="clickMult" class="buyable clickMult">
         <!-- Todo add picture -->
         <div class="buyable__text">
-          <div class="buyable__title">
-            <span class="buyable__title-text"> Extra Hands </span>
-            <span class="buyable__title-price"> <span id="buyClickMult_cost">0</span> Lines of Code </span>
+          <div>
+
+            <table class="js-sort-table" id="godothing_dir">
+                <center><h3>list of things</h3></center>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Code</th>
+                    <th>Create Date</th>
+                    <th>Update Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <a href="codeclicker/index.html"><img src="images/codeclicker.jpg" alt="code clicker snapshopt" style="width:40px;height:40px;border-radius:10%;"/></a>
+                  </td>
+                  <td>
+                    <a href="codeclicker/index.html">Code Clicker</a>
+                  </td>
+                  <td><a href="https://github.com/CraSH23000/crash23000.github.io/tree/master/codeclicker">Git Hub</a></td>
+                  <td>2020-04-26</td>
+                  <td>2020-05-15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="liveeditor/index.html"><img src="images/liveeditor.jpg" alt="code clicker snapshopt" style="width:40px;height:40px;border-radius:10%;"/></a>
+                  </td>
+                  <td>
+                    <a href="liveeditor/index.html">Live Editor</a>
+                  </td>
+                    <td><a href="https://github.com/CraSH23000/crash23000.github.io/tree/master/liveEditor">Git Hub</a></td>
+                    <td>2020-05-15</td>
+                    <td>2020-05-15</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="videoplayer/index.html"><img src="images/videoplayer.jpg" alt="code clicker snapshopt" style="width:40px;height:40px;border-radius:10%;"/></a>
+                  </td>
+                  <td>
+                    <a href="videoplayer/index.html">Video Player</a>
+                  </td>
+                    <td>TBD</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                </tbody>
+            </table>
+
           </div>
-          <div class="buyable__description"> More hands, more code </div>
-          <div class="buyable__effect"> Writes 1 line of code per extra hand </div>
-          <div id="buyClickMult_amount" class="buyable__amount"> 0 </div>
+
+
         </div>
       </div>
 
       <div><br></div>
-
-      <div id="autoClick" class="buyable autoClick">
-        <!-- Todo add picture -->
-        <div class="buyable__text">
-          <div class="buyable__title">
-            <span class="buyable__title-text"> Code Monkies </span>
-            <span class="buyable__title-price"> <span id="buyAutoClick_cost">0</span> Lines of Code </span>
-          </div>
-          <div class="buyable__description"> Not the most skilled, but they get the work done </div>
-          <div class="buyable__effect"> Writes 1 useable line of code per second </div>
-          <div id="buyAutoClick_amount"  class="buyable__amount"> 0 </div>
-        </div>
-      </div>
-
-      <div><br></div>
-
-      <div id="autoClick2" class="buyable autoClick2">
-        <!-- Todo add picture -->
-        <div class="buyable__text">
-          <div class="buyable__title">
-            <span class="buyable__title-text"> Code Generator </span>
-            <span class="buyable__title-price"> <span id="buyAutoClick2_cost">0</span> Lines of Code </span>
-          </div>
-          <div class="buyable__description"> Types random lines and some turn into code </div>
-          <div class="buyable__effect"> Writes 10 useable lines of code per second </div>
-          <div id="buyAutoClick2_amount"  class="buyable__amount"> 0 </div>
-        </div>
-      </div>
-
-      <div><br></div>
-
-      <div id="autoClick3" class="buyable autoClick3">
-        <!-- Todo add picture -->
-        <div class="buyable__text">
-          <div class="buyable__title">
-            <span class="buyable__title-text"> Actual Human Programmers </span>
-            <span class="buyable__title-price"> <span id="buyAutoClick3_cost">0</span> Lines of Code </span>
-          </div>
-          <div class="buyable__description"> Types lines of code with purpose </div>
-          <div class="buyable__effect"> Writes 100 lines of code per second </div>
-          <div id="buyAutoClick3_amount"  class="buyable__amount"> 0 </div>
-        </div>
-      </div>
 
     </div>
   </body>
-  <script src="js/script.js"></script>
 </html>
